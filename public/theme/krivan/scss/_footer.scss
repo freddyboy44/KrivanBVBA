@@ -1,0 +1,62 @@
+footer {
+	background-color: white;
+	padding: 20px;
+	overflow: hidden;
+	.item {
+		display: block;
+		float: left;
+		width: 25%;
+		overflow: hidden;
+		h2 {
+			margin: 0;
+			margin-bottom: 7px;
+		}
+
+		ul {
+			padding: 0px;
+			li {
+				list-style-type: none;
+				a {
+					font-family: 'FuturaStd-Condensed';
+					text-transform: uppercase;
+					font-size: 16px;
+				}
+			}
+		}
+
+		.nieuwsitem {
+			
+			margin-bottom: 5px;
+			.datum {
+				color: $rodekleur;
+				font-size: 8px;
+			}
+			a {
+				font-family: 'FuturaStd-Condensed';
+				text-transform: uppercase;
+			}
+			.onderkant {
+				width: 50%;
+				border-bottom: solid 1px $blauwekleur;
+			}
+		}
+		.nieuwsitem:last-child{
+			.onderkant {
+				border-bottom: none;
+			}
+		}
+	}
+}
+.copyright {
+	font-family: 'FuturaStd-Book';
+	letter-spacing: 3pt;
+	text-align: center;
+	background-color: $blauwekleur;
+	color: white;
+	font-size: 10px;
+	margin: 30px 0px;
+	a, a:hover, a:focus {
+
+		color: white;
+	}
+}

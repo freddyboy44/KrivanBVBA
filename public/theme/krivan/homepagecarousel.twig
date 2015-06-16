@@ -1,0 +1,21 @@
+
+{% setcontent fotos = 'voorpaginafotos'  %}
+	<div id="myCarousel" class="carousel slide home" data-ride="carousel">
+		<div class="carousel-inner" role="listbox">
+			{% for testfoto in fotos|shuffle %}
+				<div class="item carouselitem {{ loop.index ==1 ? ' active ' }}"><img src="{{ testfoto.fotos.0|thumbnail(1200, 500, "c") }}"></div>
+			{% endfor %}
+		</div>
+		<a class="linkscarousel" href="#myCarousel" role="button" data-slide="prev">
+		    
+		  </a>
+		  <a class="rechtscarousel" href="#myCarousel" role="button" data-slide="next">
+		    
+		  </a>
+	</div>        
+	<script>
+	console.log($('#myCarousel'));
+	$('#myCarousel').carousel({
+	  interval: 6000
+	})
+	</script>

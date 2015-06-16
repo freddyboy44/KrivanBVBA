@@ -1,0 +1,579 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16-jun-2015, 10:43:00
+    Author     : Frederik Boi
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16-jun-2015, 10:54:14
+    Author     : Gebruiker
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-mrt-2015, 10:24:24
+    Author     : Gebruiker
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16-jun-2015, 11:03:22
+    Author     : Gebruiker
+*/
+@font-face {
+  font-family: 'socialicoregular';
+  src: url("../fonts/socialico-webfont.eot");
+  src: url("../fonts/socialico-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/socialico-webfont.woff2") format("woff2"), url("../fonts/socialico-webfont.woff") format("woff"), url("../fonts/socialico-webfont.ttf") format("truetype"), url("../fonts/socialico-webfont.svg#socialicoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FuturaStd-Condensed';
+  src: url("../fonts/FuturaStd-Condensed.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaStd-Condensed.otf") format("opentype"), url("../fonts/FuturaStd-Condensed.woff") format("woff"), url("../fonts/FuturaStd-Condensed.ttf") format("truetype"), url("../fonts/FuturaStd-Condensed.svg#FuturaStd-Condensed") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FuturaStd-Book';
+  src: url("../fonts/FuturaStd-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaStd-Book.otf") format("opentype"), url("../fonts/FuturaStd-Book.woff") format("woff"), url("../fonts/FuturaStd-Book.ttf") format("truetype"), url("../fonts/FuturaStd-Book.svg#FuturaStd-Condensed") format("svg");
+  font-weight: light;
+  font-style: normal;
+}
+/* line 1, ../scss/_menu.scss */
+.menu {
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 20px;
+  height: 100px;
+}
+@media (min-width: 730px) {
+  /* line 1, ../scss/_menu.scss */
+  .menu {
+    height: 120px;
+  }
+}
+/* line 15, ../scss/_menu.scss */
+.menu .logo {
+  height: 100%;
+}
+@media (min-width: 640px) {
+  /* line 15, ../scss/_menu.scss */
+  .menu .logo {
+    border: none;
+    float: left;
+  }
+}
+/* line 21, ../scss/_menu.scss */
+.menu .logo a {
+  display: block;
+  height: 100px;
+}
+@media (min-width: 730px) {
+  /* line 21, ../scss/_menu.scss */
+  .menu .logo a {
+    height: 120px;
+  }
+}
+/* line 29, ../scss/_menu.scss */
+.menu .logo img {
+  max-height: 100px;
+}
+@media (max-width: 640px) {
+  /* line 29, ../scss/_menu.scss */
+  .menu .logo img {
+    margin: auto;
+    display: block;
+  }
+}
+@media (min-width: 640px) {
+  /* line 29, ../scss/_menu.scss */
+  .menu .logo img {
+    max-height: 60px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+  }
+}
+@media (min-width: 730px) {
+  /* line 29, ../scss/_menu.scss */
+  .menu .logo img {
+    margin-left: 20px;
+    max-height: 80px;
+  }
+}
+/* line 48, ../scss/_menu.scss */
+.menu .hoofdmenu {
+  display: none;
+  font-family: 'FuturaStd-Condensed';
+  letter-spacing: 1.3pt;
+}
+@media (min-width: 640px) {
+  /* line 48, ../scss/_menu.scss */
+  .menu .hoofdmenu {
+    height: 100px;
+    float: right;
+    display: block;
+    top: 0px;
+    right: 0px;
+  }
+}
+@media (min-width: 730px) {
+  /* line 48, ../scss/_menu.scss */
+  .menu .hoofdmenu {
+    height: 120px;
+  }
+}
+/* line 65, ../scss/_menu.scss */
+.menu .hoofdmenu ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: block;
+}
+@media (max-width: 640px) {
+  /* line 65, ../scss/_menu.scss */
+  .menu .hoofdmenu ul {
+    padding-bottom: 10px;
+    border-bottom: solid 5px #d62b28;
+  }
+}
+@media (min-width: 640px) {
+  /* line 65, ../scss/_menu.scss */
+  .menu .hoofdmenu ul {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0px;
+  }
+}
+/* line 83, ../scss/_menu.scss */
+.menu .hoofdmenu ul li {
+  margin: 0px 0px;
+  list-style: none;
+  text-transform: uppercase;
+  padding: 2px;
+  padding-top: 0px;
+  font-size: 6px;
+}
+@media (max-width: 640px) {
+  /* line 83, ../scss/_menu.scss */
+  .menu .hoofdmenu ul li {
+    width: 100%;
+  }
+}
+@media (min-width: 640px) {
+  /* line 83, ../scss/_menu.scss */
+  .menu .hoofdmenu ul li {
+    display: inline-block;
+    margin: 0px 6px;
+  }
+}
+@media (min-width: 730px) {
+  /* line 83, ../scss/_menu.scss */
+  .menu .hoofdmenu ul li {
+    text-align: right;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 83, ../scss/_menu.scss */
+  .menu .hoofdmenu ul li {
+    margin: 0px 8px;
+  }
+}
+/* line 107, ../scss/_menu.scss */
+.menu .hoofdmenu ul li a {
+  font-size: 12px;
+}
+@media (max-width: 640px) {
+  /* line 107, ../scss/_menu.scss */
+  .menu .hoofdmenu ul li a {
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-family: 'FuturaStd-Condensed';
+  }
+}
+@media (min-width: 640px) {
+  /* line 107, ../scss/_menu.scss */
+  .menu .hoofdmenu ul li a {
+    font-size: 10px;
+  }
+}
+@media (min-width: 730px) {
+  /* line 107, ../scss/_menu.scss */
+  .menu .hoofdmenu ul li a {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 107, ../scss/_menu.scss */
+  .menu .hoofdmenu ul li a {
+    font-size: 16px;
+  }
+}
+@media (min-width: 640px) {
+  /* line 127, ../scss/_menu.scss */
+  .menu .hoofdmenu ul li a:hover {
+    border-bottom: solid 4px #d62b28;
+  }
+}
+/* line 133, ../scss/_menu.scss */
+.menu .hoofdmenu ul li a.current {
+  text-decoration: none;
+}
+@media (min-width: 640px) {
+  /* line 133, ../scss/_menu.scss */
+  .menu .hoofdmenu ul li a.current {
+    border-bottom: solid 4px #d62b28;
+  }
+}
+/* line 140, ../scss/_menu.scss */
+.menu .hoofdmenu ul li a, .menu .hoofdmenu ul li a:hover, .menu .hoofdmenu ul li a:focus {
+  text-decoration: none;
+}
+@media (min-width: 640px) {
+  /* line 140, ../scss/_menu.scss */
+  .menu .hoofdmenu ul li a, .menu .hoofdmenu ul li a:hover, .menu .hoofdmenu ul li a:focus {
+    padding: 0px;
+  }
+}
+@media (min-width: 640px) {
+  /* line 148, ../scss/_menu.scss */
+  .menu .hoofdmenu ul li:first-child {
+    margin-left: 0px;
+  }
+}
+@media (min-width: 640px) {
+  /* line 154, ../scss/_menu.scss */
+  .menu .hoofdmenu ul li:last-child {
+    margin-right: 0px;
+    padding-right: 20px;
+  }
+  /* line 158, ../scss/_menu.scss */
+  .menu .hoofdmenu ul li:last-child a {
+    padding-right: 0px;
+  }
+}
+/* line 168, ../scss/_menu.scss */
+.menu .toggle-mobiel {
+  display: none;
+}
+@media (max-width: 640px) {
+  /* line 168, ../scss/_menu.scss */
+  .menu .toggle-mobiel {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+/* line 177, ../scss/_menu.scss */
+.menu .toggle-mobiel:hover {
+  cursor: pointer;
+}
+
+/* line 1, ../scss/_slideshow.scss */
+.carousel.home {
+  overflow: hidden;
+}
+/* line 5, ../scss/_slideshow.scss */
+.carousel.home .item {
+  overflow: hidden;
+  max-height: 500px;
+}
+/* line 8, ../scss/_slideshow.scss */
+.carousel.home .item img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 14, ../scss/_slideshow.scss */
+.linkscarousel {
+  height: 50px;
+  width: 50px;
+  background-image: url("../images/chevron-left.png");
+  background-size: 50px 50px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+/* line 22, ../scss/_slideshow.scss */
+.rechtscarousel {
+  height: 50px;
+  width: 50px;
+  background-image: url("../images/chevron-right.png");
+  background-size: 50px 50px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  right: 0px;
+}
+
+/* line 1, ../scss/_footer.scss */
+footer {
+  background-color: white;
+  padding: 20px;
+  overflow: hidden;
+}
+/* line 5, ../scss/_footer.scss */
+footer .item {
+  display: block;
+  float: left;
+  width: 25%;
+  overflow: hidden;
+}
+/* line 10, ../scss/_footer.scss */
+footer .item h2 {
+  margin: 0;
+  margin-bottom: 7px;
+}
+/* line 15, ../scss/_footer.scss */
+footer .item ul {
+  padding: 0px;
+}
+/* line 17, ../scss/_footer.scss */
+footer .item ul li {
+  list-style-type: none;
+}
+/* line 19, ../scss/_footer.scss */
+footer .item ul li a {
+  font-family: 'FuturaStd-Condensed';
+  text-transform: uppercase;
+  font-size: 16px;
+}
+/* line 27, ../scss/_footer.scss */
+footer .item .nieuwsitem {
+  margin-bottom: 5px;
+}
+/* line 30, ../scss/_footer.scss */
+footer .item .nieuwsitem .datum {
+  color: #d62b28;
+  font-size: 8px;
+}
+/* line 34, ../scss/_footer.scss */
+footer .item .nieuwsitem a {
+  font-family: 'FuturaStd-Condensed';
+  text-transform: uppercase;
+}
+/* line 38, ../scss/_footer.scss */
+footer .item .nieuwsitem .onderkant {
+  width: 50%;
+  border-bottom: solid 1px #006ab1;
+}
+/* line 44, ../scss/_footer.scss */
+footer .item .nieuwsitem:last-child .onderkant {
+  border-bottom: none;
+}
+
+/* line 50, ../scss/_footer.scss */
+.copyright {
+  font-family: 'FuturaStd-Book';
+  letter-spacing: 3pt;
+  text-align: center;
+  background-color: #006ab1;
+  color: white;
+  font-size: 10px;
+  margin: 30px 0px;
+}
+/* line 58, ../scss/_footer.scss */
+.copyright a, .copyright a:hover, .copyright a:focus {
+  color: white;
+}
+
+/* line 19, ../scss/krivan.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 23, ../scss/krivan.scss */
+body {
+  font-family: 'FuturaStd-Book';
+  font-weight: normal;
+  font-size: 14px;
+  color: #006ab1;
+  margin: 0;
+}
+@media (min-width: 640px) {
+  /* line 23, ../scss/krivan.scss */
+  body {
+    background-color: #006ab1;
+  }
+}
+
+/* line 34, ../scss/krivan.scss */
+a, a:hover, a:focus {
+  color: #006ab1;
+}
+
+/* line 38, ../scss/krivan.scss */
+h1, h2, h3, h4, h5 {
+  font-family: 'FuturaStd-Condensed';
+  font-weight: normal;
+  text-transform: uppercase;
+}
+@media (min-width: 640px) {
+  /* line 38, ../scss/krivan.scss */
+  h1, h2, h3, h4, h5 {
+    color: #d62b28;
+  }
+}
+
+/* line 47, ../scss/krivan.scss */
+h1 {
+  font-size: 24px;
+}
+
+/* line 50, ../scss/krivan.scss */
+h2 {
+  font-size: 20px;
+}
+
+/* line 53, ../scss/krivan.scss */
+h3 {
+  font-size: 18px;
+}
+
+/* line 56, ../scss/krivan.scss */
+h4 {
+  font-size: 16px;
+}
+
+/* line 60, ../scss/krivan.scss */
+.content {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+/* line 65, ../scss/krivan.scss */
+.content .tweekolommen {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 20px;
+}
+/* line 71, ../scss/krivan.scss */
+.content .tweekolommen .left-content, .content .tweekolommen .aside {
+  padding: 10px;
+}
+/* line 75, ../scss/krivan.scss */
+.content .tweekolommen .left-content {
+  display: block;
+  float: left;
+  width: 75%;
+  overflow: hidden;
+}
+/* line 81, ../scss/krivan.scss */
+.content .tweekolommen .aside {
+  display: block;
+  float: left;
+  width: 25%;
+  overflow: hidden;
+}
+/* line 89, ../scss/krivan.scss */
+.content .horizontitel {
+  display: flex;
+  align-content: stretch;
+  background-image: url("../images/rodelijn.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 4px;
+}
+/* line 96, ../scss/krivan.scss */
+.content .horizontitel .titel {
+  color: #d62b28;
+  background-color: white;
+  padding-right: 30px;
+  font-family: 'FuturaStd-Condensed';
+  text-transform: uppercase;
+  font-size: 20px;
+}
+/* line 110, ../scss/krivan.scss */
+.content .indekijker {
+  padding: 10px;
+  display: flex;
+  align-items: stretch;
+  direction: row;
+  flex-wrap: wrap;
+}
+/* line 116, ../scss/krivan.scss */
+.content .indekijker .item {
+  width: 25%;
+}
+/* line 119, ../scss/krivan.scss */
+.content .indekijker .item a {
+  display: block;
+}
+/* line 123, ../scss/krivan.scss */
+.content .indekijker .item a.foto {
+  display: block;
+  margin-bottom: 10px;
+}
+/* line 128, ../scss/krivan.scss */
+.content .indekijker .item a.titel {
+  font-size: 20px;
+  font-family: 'FuturaStd-Condensed';
+  text-transform: uppercase;
+}
+/* line 134, ../scss/krivan.scss */
+.content .indekijker .item .datum {
+  color: #d62b28;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/* line 142, ../scss/krivan.scss */
+.content .indekijker .item .teaser {
+  font-size: 11px;
+}
+/* line 145, ../scss/krivan.scss */
+.content .indekijker .item a.leesmeer {
+  position: absolute;
+  display: block;
+  bottom: -32%;
+  color: red;
+  text-decoration: underline;
+}
+
+/* line 156, ../scss/krivan.scss */
+.max-container {
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+@media (min-width: 1200px) {
+  /* line 156, ../scss/krivan.scss */
+  .max-container {
+    max-width: 1020px;
+  }
+}

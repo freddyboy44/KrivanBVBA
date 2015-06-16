@@ -1,0 +1,171 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16-jun-2015, 10:43:00
+    Author     : Frederik Boi
+*/
+
+
+@import "colors";
+@import "mixins";
+@import "fonts";
+@import "menu";
+@import "slideshow";
+@import "footer";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	@include breakpoint(tablet) {
+		background-color: $blauwekleur;	
+	}
+    font-family: 'FuturaStd-Book';
+    font-weight: normal;
+    font-size: 14px;
+    color: $blauwekleur;
+    margin: 0;
+}
+
+a, a:hover, a:focus {
+	color: $blauwekleur;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'FuturaStd-Condensed';
+	font-weight: normal;
+	text-transform: uppercase;
+	@include breakpoint(tablet) {
+		color: $rodekleur;	
+	}
+}
+
+h1 {
+	font-size: 24px;
+}
+h2 {
+	font-size: 20px;
+}
+h3 {
+	font-size: 18px;
+}
+h4 {
+	font-size: 16px;
+}
+
+.content {
+	background-color: white;
+	padding: 20px;
+	margin-bottom: 20px;
+
+	.tweekolommen {
+		width: 100%;
+		overflow: hidden;
+		display: flex;
+		align-items: stretch;
+		margin-bottom: 20px;
+		.left-content, .aside {
+			padding: 10px;
+		}
+
+		.left-content {
+			display: block;
+			float: left;
+			width: 75%;
+			overflow: hidden;
+		}
+		.aside {
+			display: block;
+			float: left;
+			width: 25%;
+			overflow: hidden;
+		}	
+	}
+	
+	.horizontitel {
+		display: flex;
+		align-content: stretch;
+		background-image: url('../images/rodelijn.jpg');
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 100% 4px;
+		.titel {
+			color: $rodekleur;
+			background-color: white;
+			padding-right:30px;
+			font-family: 'FuturaStd-Condensed';
+			text-transform: uppercase;
+			font-size: 20px;
+		}
+
+		.lijn {
+			
+		}
+	}
+
+	.indekijker {
+		padding: 10px;
+		display: flex;
+		align-items: stretch;
+		direction: row;
+		flex-wrap: wrap;
+		.item {
+			width: 25%;
+
+			a {
+				display: block;
+			}
+
+			a.foto {
+				display: block;
+				margin-bottom: 10px;
+			}
+
+			a.titel {
+				font-size: 20px;
+				font-family: 'FuturaStd-Condensed';
+				text-transform: uppercase;
+			}
+
+			.datum {
+				color: $rodekleur;
+				font-size: 12px;
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+
+
+			.teaser {
+				font-size: 11px;
+			}
+			a.leesmeer {
+				position: absolute;
+				display: block;
+				bottom:-32%;
+				color: red;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.max-container {
+	max-width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	@include breakpoint(tablet) {
+		//max-width: 720px;
+	}
+	@include breakpoint(laptop) {
+		//max-width: 800px;
+	}
+	@include breakpoint(desktop) {
+		max-width: 1020px;
+	}
+}
+

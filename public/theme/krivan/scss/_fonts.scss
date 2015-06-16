@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 16-jun-2015, 11:03:22
+    Author     : Gebruiker
+*/
+
+@font-face {
+    font-family: 'socialicoregular';
+    src: url('../fonts/socialico-webfont.eot');
+    src: url('../fonts/socialico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/socialico-webfont.woff2') format('woff2'),
+         url('../fonts/socialico-webfont.woff') format('woff'),
+         url('../fonts/socialico-webfont.ttf') format('truetype'),
+         url('../fonts/socialico-webfont.svg#socialicoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'FuturaStd-Condensed';
+  src: url('../fonts/FuturaStd-Condensed.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FuturaStd-Condensed.otf')  format('opentype'),
+       url('../fonts/FuturaStd-Condensed.woff') format('woff'),
+       url('../fonts/FuturaStd-Condensed.ttf')  format('truetype'),
+       url('../fonts/FuturaStd-Condensed.svg#FuturaStd-Condensed') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaStd-Book';
+  src: url('../fonts/FuturaStd-Book.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/FuturaStd-Book.otf')  format('opentype'),
+       url('../fonts/FuturaStd-Book.woff') format('woff'),
+       url('../fonts/FuturaStd-Book.ttf')  format('truetype'),
+       url('../fonts/FuturaStd-Book.svg#FuturaStd-Condensed') format('svg');
+  font-weight: light;
+  font-style: normal;
+}

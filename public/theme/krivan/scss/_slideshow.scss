@@ -1,0 +1,31 @@
+.carousel.home {
+	//max-height: 400px;
+	overflow:hidden;
+	
+	.item {
+		overflow: hidden;
+		max-height: 500px;
+		img {
+			width: 100%;
+			height:auto;
+		}
+	}
+}
+.linkscarousel {
+	height: 50px;
+	width: 50px;
+	background-image: url('../images/chevron-left.png');
+	background-size: 50px 50px;
+	@include vertical-align();
+	position: absolute;
+}
+.rechtscarousel {
+
+	height: 50px;
+	width: 50px;
+	background-image: url('../images/chevron-right.png');
+	background-size: 50px 50px;
+	@include vertical-align();
+	position: absolute;
+	right: 0px;
+}

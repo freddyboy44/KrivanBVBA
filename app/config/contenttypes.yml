@@ -36,7 +36,36 @@ pages:
     taxonomy: [ chapters ]
     recordsperpage: 100
 
+voorpaginafotos:
+    name: Voorpaginafotos 
+    singular_name: Voorpaginafoto 
+    fields: 
+        Naam: 
+            type: text
+        Fotos:
+            type: imagelist
 
+nieuwsitems:
+    name: Nieuwsitems 
+    singular_name: Nieuwsitem 
+    fields:
+        Titel:
+            type: text
+        slug:
+            type: slug
+            uses: titel
+        Regel2:
+            type: text
+        Teaser:
+            type: html
+            height: 150px
+        Tekst:
+            type: html
+            height: 250px
+        Foto:
+            type: imagelist 
+        Sticky:
+            type: checkbox
 # Entries can be used for things like 'news' or 'blogpostings'. They have a 'teaser',
 # which can be used for a short blurb on listing-pages, allowing visitors to
 # click-through to the rest of the entry. It also has fields for an image and an

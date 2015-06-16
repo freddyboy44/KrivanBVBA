@@ -20,7 +20,7 @@ payoff: Verzekeringen
 #
 # Don't edit the templates in theme/base-2014, because they _will_ get updated
 # in next releases
-theme: base-2014
+theme: krivan
 
 # The locale that'll be used by the application. If no locale is set the
 # fallback locale is 'en_GB'. For available options, see: 
@@ -77,7 +77,7 @@ cron_hour: 3
 #       the website, be sure to check for a config.yml file in your theme's
 #       folder. If a template is set there, it will override the setting here.
 homepage: page/1
-homepage_template: index.twig
+homepage_template: homepage.twig
 
 # The default content for the 404 page. Uses the 'record_template' template by
 # default.
@@ -191,9 +191,9 @@ thumbnails:
     cropping: crop
     notfound_image: view/img/default_notfound.png
     error_image: view/img/default_error.png
-    save_files: false
-    allow_upscale: false
-    exif_orientation: true
+    save_files: true
+    allow_upscale: true
+    exif_orientation: false
 #    browser_cache_time: 2592000
 
 # Define the HTML tags and attributes that are allowed in 'cleaned' HTML. This

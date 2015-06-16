@@ -1,0 +1,23 @@
+{% extends 'basepage.twig' %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ paths.theme }}js/owl.carousel.min.js">
+    </script>
+{% endblock %}
+{% block body %}
+	<div id="fb-root"></div>
+	
+	<div class="content homepage max-container">
+		{% include 'homepagecarousel.twig' %}
+		<div class="tweekolommen">
+			<div class="left-content">
+				{{ record.body }}	
+			</div>
+			<div class="aside">
+				{% include '_facebook.twig' %}
+			</div>
+		</div>
+
+		{% include '_indekijker.twig' %}
+	</div>
+{% endblock %}

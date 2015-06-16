@@ -1,0 +1,46 @@
+<footer class="max-container">
+	<div class="item">
+		<h2>Contact</h2>
+		<p>
+			Bruggestraat 3<br/>
+			8755 Ruislede
+		</p>
+		<p>
+			Tulpenlaan 3<br/>
+			8490 Zerkegem
+		</p>
+		<p>
+			Tel.: 051/68 81 93<br/>
+			<a href="mailto:info@krivanbvba.be">info@krivanbvba.be</a>
+		</p>
+	</div>
+	
+	<div class="item">
+		<h2>Bedrijf</h2>
+		{{ menu('main','_menufooter.twig') }}
+	</div>
+
+	<div class="item">
+		<h2>In de kijker</h2>
+		{% setcontent indekijker = 'nieuwsitems/latest/4' where { sticky : 1 } %}
+		{% for item in indekijker %}
+			<div class="nieuwsitem">
+				<a href="{{ item.link }}">{{ item.titel }}</a><br/>
+				<a href="{{ item.link }}">{{ item.regel2 }}</a><br/>
+				<span class="datum">{{ item.datechanged|date('d/m/y') }}</span>
+				<div class="onderkant"></div>
+			</div>
+		{% endfor %}
+	</div>
+
+	<div class="item">
+		<h2>Nieuwsbrief</h2>
+		<p>
+			Schrijf je in op onze nieuwsbrief
+		</p>
+	</div>
+</footer>
+
+<div class="copyright">
+	<i class="fa fa-copyright"></i> 2015 - <a target=_new href="http://www.magict.be">MAGICT.BE</a>
+</div>

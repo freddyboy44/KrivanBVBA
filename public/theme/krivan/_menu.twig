@@ -1,0 +1,16 @@
+<div class="max-container menu">
+	<div class="logo">
+		<a href="/"><img src="{{ paths.theme }}/images/logo-krivan.png"></a>
+	</div>
+	<div class="hoofdmenu">
+		{{ menu('main','menu.twig') }}
+	</div>
+	<div class="toggle-mobiel">
+		<i id="menuknop" class="fa fa-bars"></i>
+	</div>
+</div>
+<script>
+	$('#menuknop').click(function(){
+		$('.hoofdmenu').slideToggle();
+	})
+</script>
