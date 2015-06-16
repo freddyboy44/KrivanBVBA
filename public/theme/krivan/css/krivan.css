@@ -338,6 +338,23 @@ and open the template in the editor.
   right: 0px;
 }
 
+/* line 33, ../scss/_slideshow.scss */
+#partnercarousel {
+  width: 100%;
+}
+/* line 37, ../scss/_slideshow.scss */
+#partnercarousel .item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 40, ../scss/_slideshow.scss */
+#partnercarousel .item img {
+  max-height: 60px;
+  width: auto;
+  display: block;
+  margin: auto;
+}
+
 /* line 1, ../scss/_footer.scss */
 footer {
   background-color: white;
@@ -524,38 +541,39 @@ h4 {
   align-items: stretch;
   direction: row;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
-/* line 116, ../scss/krivan.scss */
+/* line 117, ../scss/krivan.scss */
 .content .indekijker .item {
   width: 25%;
 }
-/* line 119, ../scss/krivan.scss */
+/* line 120, ../scss/krivan.scss */
 .content .indekijker .item a {
   display: block;
 }
-/* line 123, ../scss/krivan.scss */
+/* line 124, ../scss/krivan.scss */
 .content .indekijker .item a.foto {
   display: block;
   margin-bottom: 10px;
 }
-/* line 128, ../scss/krivan.scss */
+/* line 129, ../scss/krivan.scss */
 .content .indekijker .item a.titel {
   font-size: 20px;
   font-family: 'FuturaStd-Condensed';
   text-transform: uppercase;
 }
-/* line 134, ../scss/krivan.scss */
+/* line 135, ../scss/krivan.scss */
 .content .indekijker .item .datum {
   color: #d62b28;
   font-size: 12px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-/* line 142, ../scss/krivan.scss */
+/* line 143, ../scss/krivan.scss */
 .content .indekijker .item .teaser {
   font-size: 11px;
 }
-/* line 145, ../scss/krivan.scss */
+/* line 146, ../scss/krivan.scss */
 .content .indekijker .item a.leesmeer {
   position: absolute;
   display: block;
@@ -564,7 +582,7 @@ h4 {
   text-decoration: underline;
 }
 
-/* line 156, ../scss/krivan.scss */
+/* line 157, ../scss/krivan.scss */
 .max-container {
   max-width: 95%;
   margin-left: auto;
@@ -572,7 +590,7 @@ h4 {
   display: block;
 }
 @media (min-width: 1200px) {
-  /* line 156, ../scss/krivan.scss */
+  /* line 157, ../scss/krivan.scss */
   .max-container {
     max-width: 1020px;
   }

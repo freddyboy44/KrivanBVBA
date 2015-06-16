@@ -1,0 +1,40 @@
+<div class="horizontitel">
+    <span class="titel">
+        Partners
+    </span>
+    <span class="lijn">
+    </span>
+</div>
+{% setcontent partners = 'partners'  %}	
+	<div id="partnercarousel">
+		{% for partner in partners|shuffle %}
+
+            
+
+			<div class="item"><img  src="{{ partner.logo|thumbnail(200, 200, "r") }}"></div>
+		{% endfor %}
+	</div>        
+
+<script>
+    $(document).ready(function(){
+        $('#partnercarousel').owlCarousel({
+            //autoplay:true,
+            autoplayTimeout:2500,
+            autoplaySpeed: 350,
+            loop: 1,        
+            margin: 20,
+            slideBy: 'page',
+            responsive:{
+                0:{
+                        items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        });    
+    })
+</script>

@@ -193,7 +193,7 @@ thumbnails:
     error_image: view/img/default_error.png
     save_files: true
     allow_upscale: true
-    exif_orientation: false
+    exif_orientation: true
 #    browser_cache_time: 2592000
 
 # Define the HTML tags and attributes that are allowed in 'cleaned' HTML. This

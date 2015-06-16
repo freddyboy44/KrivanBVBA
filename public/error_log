@@ -70,3 +70,20 @@
 [16-Jun-2015 15:30:50 UTC] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 11648 bytes) in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/thumbs/src/ThumbnailCreator.php on line 176
 [16-Jun-2015 15:43:24 UTC] PHP Warning:  SessionHandler::read(): open(/tmp/sess_fcc5a8e6e1d7b90b169edab07a494ff0, O_RDWR) failed: Toegang geweigerd (13) in /home/krivanbvba/public_html/krivanbvba/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Session/Storage/Proxy/SessionHandlerProxy.php on line 69
 [16-Jun-2015 15:43:24 UTC] PHP Warning:  SessionHandler::write(): open(/tmp/sess_fcc5a8e6e1d7b90b169edab07a494ff0, O_RDWR) failed: Toegang geweigerd (13) in /home/krivanbvba/public_html/krivanbvba/vendor/symfony/http-foundation/Symfony/Component/HttpFoundation/Session/Storage/Proxy/SessionHandlerProxy.php on line 77
+[16-Jun-2015 16:00:20 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg, libjpeg: recoverable error: Corrupt JPEG data: premature end of data segment
+ in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/thumbs/src/ThumbnailCreator.php on line 176
+[16-Jun-2015 16:00:20 UTC] PHP Warning:  imagecreatefromjpeg(): '/home/krivanbvba/public_html/krivanbvba/public/files/2015-06/dela.jpg' is not a valid JPEG file in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/thumbs/src/ThumbnailCreator.php on line 176
+[16-Jun-2015 16:00:20 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/thumbs/src/ThumbnailCreator.php on line 259
+[16-Jun-2015 16:00:20 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg, libjpeg: recoverable error: Corrupt JPEG data: premature end of data segment
+ in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/thumbs/src/ThumbnailCreator.php on line 176
+[16-Jun-2015 16:00:20 UTC] PHP Warning:  imagecreatefromjpeg(): '/home/krivanbvba/public_html/krivanbvba/public/files/2015-06/dela.jpg' is not a valid JPEG file in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/thumbs/src/ThumbnailCreator.php on line 176
+[16-Jun-2015 16:00:20 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/thumbs/src/ThumbnailCreator.php on line 259
+[16-Jun-2015 16:00:25 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg, libjpeg: recoverable error: Corrupt JPEG data: premature end of data segment
+ in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/thumbs/src/ThumbnailCreator.php on line 176
+[16-Jun-2015 16:00:25 UTC] PHP Warning:  imagecreatefromjpeg(): '/home/krivanbvba/public_html/krivanbvba/public/files/2015-06/dela.jpg' is not a valid JPEG file in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/thumbs/src/ThumbnailCreator.php on line 176
+[16-Jun-2015 16:00:25 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/thumbs/src/ThumbnailCreator.php on line 259
+[16-Jun-2015 16:04:41 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg, libjpeg: recoverable error: Corrupt JPEG data: premature end of data segment
+ in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/thumbs/src/ThumbnailCreator.php on line 176
+[16-Jun-2015 16:04:41 UTC] PHP Warning:  imagecreatefromjpeg(): '/home/krivanbvba/public_html/krivanbvba/public/files/2015-06/dela.jpg' is not a valid JPEG file in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/thumbs/src/ThumbnailCreator.php on line 176
+[16-Jun-2015 16:04:41 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/thumbs/src/ThumbnailCreator.php on line 255
+[16-Jun-2015 16:32:12 UTC] PHP Catchable fatal error:  Object of class Bolt\Content could not be converted to string in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/bolt/src/Twig/Handler/ImageHandler.php on line 77

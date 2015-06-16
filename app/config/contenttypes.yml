@@ -66,6 +66,22 @@ nieuwsitems:
             type: imagelist 
         Sticky:
             type: checkbox
+
+partners:
+    name: Partners 
+    singular_name: Partner 
+    default_status: publish
+    fields:
+        Naam: 
+            type: text
+        Website:
+            type: text 
+        Logo: 
+            type: image
+        Logogrijs:
+            type: image
+
+
 # Entries can be used for things like 'news' or 'blogpostings'. They have a 'teaser',
 # which can be used for a short blurb on listing-pages, allowing visitors to
 # click-through to the rest of the entry. It also has fields for an image and an
