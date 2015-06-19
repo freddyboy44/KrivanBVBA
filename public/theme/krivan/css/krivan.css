@@ -727,6 +727,13 @@ form textarea {
   height: 250px;
   width: 100%;
 }
+/* line 17, ../scss/_contact.scss */
+.contact .item .gegevens .adres, .contact .item .gegevens .gegevens {
+  width: 50%;
+  display: block;
+  overflow: hidden;
+  float: left;
+}
 
 /* line 23, ../scss/krivan.scss */
 * {
