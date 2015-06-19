@@ -1,0 +1,12 @@
+{% extends 'record.twig' %}
+{% block titel %}
+	Partners
+{% endblock %}
+{% block gegevens %}
+	{% setcontent partners = 'partners' %}
+	<div class="partnersoverzicht">
+		{% for partner in partners %}
+			<div class="item"><img  src="{{ partner.logo|thumbnail(200, 200, "r") }}"></div>
+		{% endfor %}
+	</div>
+{% endblock %}

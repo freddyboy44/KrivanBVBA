@@ -1,0 +1,25 @@
+.contact {
+	overflow: hidden;
+	.item {
+		width: 100%;
+		display: block;
+		float :left;
+		overflow: hidden;
+		@include breakpoint(tablet) {
+			width: 50%;
+		}
+		.map {
+			height: 250px;
+			width: 100%;
+		}
+
+		.gegevens {
+			.adres, .gegevens {
+				width: 50%;
+				display: block;
+				overflow: hidden;
+				float: left;
+			}
+		}
+	}
+}

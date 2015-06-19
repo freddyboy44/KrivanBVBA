@@ -4,22 +4,28 @@
 main:
     - label: Nieuws
       path: nieuws
-      class: first
+      class: first nietmobiel
     - label: Verzekeringen
       path: verzekeringen
+      class: mobiel
     - label: Beleggingen
       path: beleggingen 
+      class: mobiel
     - label: Offerte
       path: offerte 
+      class: mobiel
     - label: Partners
       path: partners 
+      class: mobiel
     - label: Contact
       path: contact 
+      class: mobiel laatstemobiel
     - label: Documenten
       path: documenten 
+      class: nietmobiel
     - label: facebook
-      path: haha
-      class: social 
+      link: https://www.facebook.com/krivanbvba
+      class: social  nietmobiel
     - label: linkedin
       path: linkedin
-      class: social
+      class: social nietmobiel

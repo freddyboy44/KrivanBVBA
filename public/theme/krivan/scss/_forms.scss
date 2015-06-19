@@ -1,0 +1,50 @@
+form {
+	h3 {
+		color: $blauwekleur;
+		border-bottom: solid 2px $rodekleur;
+		padding-bottom: 7px;
+		margin-bottom: 15px;
+		display: inline-block;
+		font-size: 22px;
+	}
+	overflow: hidden;
+	@include breakpoint(tablet) {
+		width: 95%;
+		display: block;
+		margin: auto;	
+	}
+	.simpleform-row {
+		overflow: hidden;	
+		width: 100%;
+	}
+	.simpleform-text, .simpleform-email, .simpleform-checkbox, .simpleform-choice {
+		height: 40px;
+		overflow: hidden;
+	}
+
+	label, input, textarea, select {
+		display: block;
+		float :left;
+	}
+	label {
+		width: 20%;
+	}
+	input[type='text'], input[type='email'], textarea {
+		width: 80%;
+		background-color: $grijzeachtergrond;
+		border: none;
+		height: 100%;
+		
+	}
+	select {
+		width: 80%;
+		max-width: 300px;
+	}	
+
+	input[type='text'], input[type='email'] {
+		max-height: 30px;
+	}
+	textarea {
+		height: 120px;
+	}
+}

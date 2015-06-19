@@ -1,0 +1,20 @@
+{% extends 'record.twig' %}
+
+{% block title %}
+	Offerte
+{% endblock %}
+
+{% block gegevens %}
+    {% setcontent offertes = 'offertes' orderby 'id' %}
+    <div class="offertes">
+	    {% for offerte in offertes %}
+	    	<a href="{{ offerte.link }}" class="offerte">{{ offerte.naam }}</a>
+	    {% endfor %}
+    </div>
+    
+    {% if record.slug == 'offerte' %}
+    	{{ simpleform('autoverzekering') }}
+    {% else %}
+    	{{ simpleform(record.slug) }}
+    {% endif %}
+{% endblock %}

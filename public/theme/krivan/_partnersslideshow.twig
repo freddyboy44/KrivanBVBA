@@ -9,7 +9,6 @@
 	<div id="partnercarousel">
 		{% for partner in partners|shuffle %}
 
-            
 
 			<div class="item"><img  src="{{ partner.logo|thumbnail(200, 200, "r") }}"></div>
 		{% endfor %}
@@ -17,24 +16,53 @@
 
 <script>
     $(document).ready(function(){
-        $('#partnercarousel').owlCarousel({
-            //autoplay:true,
+        /*$('#partnercarousel').owlCarousel({
+            autoplay:true,
             autoplayTimeout:2500,
             autoplaySpeed: 350,
-            loop: 1,        
+            loop: true,        
             margin: 20,
             slideBy: 'page',
-            responsive:{
-                0:{
-                        items:1
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:5
-                }
-            }
-        });    
+            items: 5
+        });    */
+    $('#partnercarousel').slick({
+      //dots: true,
+       
+       autoplay: true,
+      autoplaySpeed: 4000,
+      infinite: true,
+      speed: 1000,
+      slidesToShow: 6,
+      slidesToScroll: 6,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            infinite: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite:true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite:true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
     })
 </script>

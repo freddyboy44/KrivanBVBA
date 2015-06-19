@@ -1,0 +1,12 @@
+{% extends 'basepage.twig' %}
+{% block body %}
+	<div class="max-container content">
+		{% block titel %}
+			<h1>{{ record.title }}</h1>
+			<hr>
+		{% endblock %}
+		{% block gegevens %}
+			{{ record.body }}    
+		{% endblock %}
+    </div>
+{% endblock %}

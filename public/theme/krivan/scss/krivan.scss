@@ -8,13 +8,17 @@ and open the template in the editor.
     Author     : Frederik Boi
 */
 
-
+@import "compass/css3";
 @import "colors";
 @import "mixins";
 @import "fonts";
 @import "menu";
 @import "slideshow";
 @import "footer";
+@import "partners";
+@import "offerte";
+@import "forms";
+@import "contact";
 
 * {
 	box-sizing: border-box;
@@ -62,12 +66,40 @@ h4 {
 	padding: 20px;
 	margin-bottom: 20px;
 
+	h1 {
+		color: $blauwekleur;
+		text-align: center;
+		width: 100%;
+		font-size: 36px;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+		li {
+			line-height: 200%;
+		}
+		li:before {
+		    content: "• ";
+		    margin-right: 10px;
+		    color: $rodekleur; /* or whatever color you prefer */
+		}
+	}
+
+	@include breakpoint(phabletonly) {
+		padding-top: 0px;		
+	}
+	
 	.tweekolommen {
 		width: 100%;
 		overflow: hidden;
-		display: flex;
-		align-items: stretch;
+		@include breakpoint(tablet) {
+			display: flex;
+			align-items: stretch;	
+		}
+		
 		margin-bottom: 20px;
+
 		.left-content, .aside {
 			padding: 10px;
 		}
@@ -75,14 +107,27 @@ h4 {
 		.left-content {
 			display: block;
 			float: left;
-			width: 75%;
+			@include breakpoint(tablet) {
+				width: 75%;	
+			}
+			width: 100%;
 			overflow: hidden;
+			padding-right: 30px; 	
 		}
 		.aside {
 			display: block;
 			float: left;
-			width: 25%;
+			@include breakpoint(tablet) {
+				width: 25%;	
+			}
+			width: 100%;
 			overflow: hidden;
+
+			.fb-page {
+				@include breakpoint(phabletonly) {
+					display: none;	
+				}
+			}
 		}	
 	}
 	
@@ -93,6 +138,11 @@ h4 {
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: 100% 4px;
+		margin-bottom: 10px;
+		@include breakpoint(tablet) {
+			margin-bottom: 40px;	
+		}
+		
 		.titel {
 			color: $rodekleur;
 			background-color: white;
@@ -113,10 +163,19 @@ h4 {
 		align-items: stretch;
 		direction: row;
 		flex-wrap: wrap;
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 		.item {
-			width: 25%;
-
+			width: 100%;
+			@include breakpoint(phabletonly) {
+				margin-bottom: 20px;
+			}
+			@include breakpoint(tablet) {
+				width: 50%;	
+			}
+			@include breakpoint(laptop) {
+				width: 25%;
+			}
+			position: relative;
 			a {
 				display: block;
 			}
@@ -145,8 +204,7 @@ h4 {
 			}
 			a.leesmeer {
 				position: absolute;
-				display: block;
-				bottom:-32%;
+				bottom:0px;
 				color: red;
 				text-decoration: underline;
 			}
@@ -170,3 +228,7 @@ h4 {
 	}
 }
 
+hr {
+	height: 3px;
+	background: $rodekleur;
+}

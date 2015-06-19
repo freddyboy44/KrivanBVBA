@@ -87,3 +87,11 @@
 [16-Jun-2015 16:04:41 UTC] PHP Warning:  imagecreatefromjpeg(): '/home/krivanbvba/public_html/krivanbvba/public/files/2015-06/dela.jpg' is not a valid JPEG file in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/thumbs/src/ThumbnailCreator.php on line 176
 [16-Jun-2015 16:04:41 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/thumbs/src/ThumbnailCreator.php on line 255
 [16-Jun-2015 16:32:12 UTC] PHP Catchable fatal error:  Object of class Bolt\Content could not be converted to string in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/bolt/src/Twig/Handler/ImageHandler.php on line 77
+[18-Jun-2015 07:57:14 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg, libjpeg: recoverable error: Corrupt JPEG data: premature end of data segment
+ in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/thumbs/src/ThumbnailCreator.php on line 176
+[18-Jun-2015 07:57:14 UTC] PHP Warning:  imagecreatefromjpeg(): '/home/krivanbvba/public_html/krivanbvba/public/files/2015-06/1434614234_dela.jpg' is not a valid JPEG file in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/thumbs/src/ThumbnailCreator.php on line 176
+[18-Jun-2015 07:57:14 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/thumbs/src/ThumbnailCreator.php on line 259
+[18-Jun-2015 07:57:14 UTC] PHP Warning:  imagecreatefromjpeg(): gd-jpeg, libjpeg: recoverable error: Corrupt JPEG data: premature end of data segment
+ in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/thumbs/src/ThumbnailCreator.php on line 176
+[18-Jun-2015 07:57:14 UTC] PHP Warning:  imagecreatefromjpeg(): '/home/krivanbvba/public_html/krivanbvba/public/files/2015-06/1434614234_dela.jpg' is not a valid JPEG file in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/thumbs/src/ThumbnailCreator.php on line 176
+[18-Jun-2015 07:57:14 UTC] PHP Warning:  imagecopyresampled() expects parameter 2 to be resource, boolean given in /home/krivanbvba/public_html/krivanbvba/vendor/bolt/thumbs/src/ThumbnailCreator.php on line 259

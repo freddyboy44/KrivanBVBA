@@ -4,8 +4,14 @@
 	overflow: hidden;
 	width:95%;
 	margin: auto;
-	margin-bottom: 20px;
-	height: 100px;
+	@include breakpoint(tablet) {
+		margin-bottom: 20px;	
+	}
+	
+	@include breakpoint(tablet) {
+		height: 100px;	
+	}
+	
 	
 	@include breakpoint(laptop) {
 		height: 120px;
@@ -70,7 +76,7 @@
 
 			@include breakpoint(phabletonly) {
 				padding-bottom: 10px;
-				border-bottom: solid 5px $rodekleur;
+				border-bottom: solid 2px $rodekleur;
 			}
 
 			@include breakpoint(tablet) {
@@ -105,12 +111,21 @@
 				font-size: 6px;
 				
 				a {
+					padding-bottom: 10px;
 					font-size: 12px;
+
 					@include breakpoint(phabletonly) {
+						background-image: url('../images/rodelijn.jpg');
+						background-position: center bottom;
+						background-repeat: no-repeat;
+						background-size: 40px 1px;
 						display: block;
 						margin:auto;	
 						text-align: center;
 						font-family: 'FuturaStd-Condensed';
+						font-size: 18px;
+						padding-bottom: 5px;
+						margin-bottom: 1px;
 					}
 					
 					@include breakpoint(tablet) {
@@ -132,6 +147,7 @@
 
 				a.current {
 					@include breakpoint(tablet) {
+
 						border-bottom: solid 4px $rodekleur;	
 					}
 					
@@ -141,6 +157,7 @@
 					text-decoration: none;
 					@include breakpoint(tablet) {
 						padding: 0px;	
+						padding-bottom: 5px;
 					}
 					
 				}
@@ -159,7 +176,20 @@
 						padding-right: 0px;
 					}	
 				}
-				
+			}
+
+			li.laatstemobiel {
+				@include breakpoint(phabletonly) {
+					a {
+						background: none;
+					}								
+				}
+			}
+
+			li.nietmobiel {
+				@include breakpoint(phabletonly) {
+					display: none;	
+				}
 			}
 			
 		}

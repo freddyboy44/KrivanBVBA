@@ -1,0 +1,35 @@
+{
+    "repositories": {
+        "packagist": false,
+        "bolt": {
+            "type": "composer",
+            "url": "https://extensions.bolt.cm/satis/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "discard-changes": true,
+        "preferred-install": "dist"
+    },
+    "provide": {
+        "bolt/bolt": "2.2.3"
+    },
+    "extra": {
+        "bolt-web-path": "../public/"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bolt\\Composer\\": ""
+        }
+    },
+    "scripts": {
+        "post-package-install": "Bolt\\Composer\\ExtensionInstaller::handle",
+        "post-package-update": "Bolt\\Composer\\ExtensionInstaller::handle"
+    },
+    "require": {
+        "bobdenotter/seo": "^0.9.0",
+        "bolt/googleanalytics": "^1.0",
+        "bolt/simpleforms": "^1.4"
+    }
+}
