@@ -22,20 +22,119 @@
             FAX : 051 / 68 77 19<br/>
             <a href="mailto:info@krivanbvba.be">info@krivanbvba.be</a>
           </div>
+          <br/><br/><br/>
           <div class="openingsuren">
-            
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    
+                  </th>
+                  <th>voormiddag</th>
+                  <th>namiddag</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>MA</td>
+                  <td>9u30 tot 12u30</td>
+                  <td>14u tot 17u</td>
+                </tr>
+                <tr>
+                  <td>DI</td>
+                  <td>9u30 tot 12u30</td>
+                  <td>enkel op afspraak</td>
+                </tr>
+                <tr>
+                  <td>WOE</td>
+                  <td>gesloten</td>
+                  <td>14u tot 17u</td>
+                </tr>
+                <tr>
+                  <td>DO</td>
+                  <td>enkel op afspraak</td>
+                  <td>enkel op afspraak</td>
+                </tr>
+                <tr>
+                  <td>VR</td>
+                  <td>9u30 tot 12u30</td>
+                  <td>14u tot 17u</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </div>
+        </div><!-- ruiselede -->
     	</div>
     	<div class="item">
-    		
-    	</div>
+        <div id="map-canvaszerkegem" class="map">
+        </div>
+        <div class="gegevens">
+          <div class="adres">
+            <h4>Kantoor Zerkegem</h4>
+            Tulpenlaan 3<br/>
+            8490 Zerkegem<br/>
+          </div>
+          <div class="communicatie">
+            Tel.: 051 / 68 81 93<br/>
+            FAX : 051 / 68 77 19<br/>
+            <a href="mailto:info@krivanbvba.be">info@krivanbvba.be</a>
+          </div>
+          <br/><br/><br/>
+          <div class="openingsuren">
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    
+                  </th>
+                  <th>voormiddag</th>
+                  <th>namiddag</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>MA</td>
+                  <td>gesloten</td>
+                  <td>16u tot 18u</td>
+                </tr>
+                <tr>
+                  <td>DI</td>
+                  <td>enkel op afspraak</td>
+                  <td>enkel op afspraak</td>
+                </tr>
+                <tr>
+                  <td>WOE</td>
+                  <td>gesloten</td>
+                  <td>14u tot 17u30</td>
+                </tr>
+                <tr>
+                  <td>DO</td>
+                  <td>enkel op afspraak</td>
+                  <td>enkel op afspraak</td>
+                </tr>
+                <tr>
+                  <td>VR</td>
+                  <td>enkel op afspraak</td>
+                  <td>enkel op afspraak</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
     <script>
-	function initialize() {
+	   function initialize() {
         var mapCanvas = document.getElementById('map-canvas');
+        var mapCanvaszerkegem = document.getElementById('map-canvaszerkegem');
+
         var mapOptions = {
           center: new google.maps.LatLng(51.0415953,3.3959626),
+          zoom: 14,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var mapOptionszerkegem = {
+          center: new google.maps.LatLng(51.1654591,3.0725792),
           zoom: 14,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
@@ -46,9 +145,19 @@
           map: map,
           icon: '{{ paths.theme }}images/locationmarker.png'
         });
+        var mapzerkegem = new google.maps.Map(mapCanvaszerkegem, mapOptionszerkegem)
+        var iconBasezerkegem = 'https://maps.google.com/mapfiles/kml/shapes/';
+        var markerzerkegem = new google.maps.Marker({
+          position: new google.maps.LatLng(51.1654591,3.0725792),
+          map: map,
+          icon: '{{ paths.theme }}images/locationmarker.png'
+        });
 
         google.maps.event.addListener(marker, 'click', function() { 
             onItemClick(event, marker); 
+          }); 
+        google.maps.event.addListener(markerzerkegem, 'click', function() { 
+            onItemClick(event, markerzerkegem); 
           }); 
         
         // Info window trigger function 
