@@ -332,22 +332,38 @@ autoverzekering:
 
 # A simple contact form. Use as {{ simpleform('contact') }} in your templates.
 contact:
-  recipient_email: info@example.org
-  recipient_name: Info
+  recipient_email: info@krivanbvba.be
+  recipient_name: Krivan BVBA
   fields:
     name:
       type: text
       required: true
-      placeholder: Your name ..
+      label: Naam
+      prefix: "<h2>Contacteer ons</h2>"
     email:
       type: email
-      label: Email address
+      label: Email 
       required: true
-      placeholder: Your email address ..
+      label: Email
     message:
       type: textarea
       required: true
-      placeholder: Your message ..
+      label: Boodschap
+
+nieuwsbrief:
+  recipient_email: info@krivanbvba.be
+  recipient_name: Krivan BVBA
+  fields:
+    name: 
+      type: text
+      label: Naam
+      required: true
+      prefix: "<h2>Schrijf je in op onze nieuwsbrief</h2>"
+    email:
+      type: email
+      required: true
+      label: Email 
+  insert_into_table: nieuwsbrief
 
 # A demo form to showcase various options for fields. Use as
 # {{ simpleform('demo') }} in your templates.

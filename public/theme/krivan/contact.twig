@@ -122,7 +122,14 @@
           </div>
         </div>
       </div>
+      <div class="formulier contacteerons">
+        {{ simpleform('contact') }}
+      </div>
+      <div class="formulier nieuwsbrief">
+        {{ simpleform('nieuwsbrief') }}
+      </div>
     </div>
+    
     <script>
 	   function initialize() {
         var mapCanvas = document.getElementById('map-canvas');
