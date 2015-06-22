@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "41af1785d42485a9792c6c49c30f97fd",
+    "hash": "8e6af15b243cd1730eba3c8778fd5b38",
     "packages": [
         {
             "name": "bobdenotter/seo",
@@ -142,6 +142,51 @@
                 "issues": "https://github.com/jadwigo/SimpleForms/issues"
             },
             "time": "2015-05-19 14:10:40"
+        },
+        {
+            "name": "miguelavaqrod/newsletter",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/miguelavaqrod/bolt-newsletter-subscription.git",
+                "reference": "c14ace775b448bd3bdda2d1e7cca0bb45914fde4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/miguelavaqrod/bolt-newsletter-subscription/zipball/c14ace775b448bd3bdda2d1e7cca0bb45914fde4",
+                "reference": "c14ace775b448bd3bdda2d1e7cca0bb45914fde4",
+                "shasum": ""
+            },
+            "require": {
+                "bolt/bolt": ">=2.0.0,<3.0.0"
+            },
+            "type": "bolt-extension",
+            "autoload": {
+                "files": [
+                    "init.php"
+                ],
+                "psr-4": {
+                    "Bolt\\Extension\\miguelavaqrod\\newsletter\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Miguel Angel Vaquero",
+                    "email": "miguela.vaqrod@gmail.com"
+                }
+            ],
+            "description": "An extension to save newsletter email subscriptions.",
+            "keywords": [
+                "newsletter"
+            ],
+            "support": {
+                "source": "https://github.com/miguelavaqrod/bolt-newsletter-subscription/tree/v1.0",
+                "issues": "https://github.com/miguelavaqrod/bolt-newsletter-subscription/issues"
+            },
+            "time": "2015-02-14 15:17:51"
         }
     ],
     "packages-dev": [],

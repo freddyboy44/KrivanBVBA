@@ -33,6 +33,9 @@ pages:
         template:
             type: templateselect
             filter: '*.twig'
+        seo:
+            type: seo
+            group: "SEO settings"
     taxonomy: [ chapters ]
     recordsperpage: 100
 

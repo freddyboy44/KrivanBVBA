@@ -30,6 +30,7 @@
     "require": {
         "bobdenotter/seo": "^0.9.0",
         "bolt/googleanalytics": "^1.0",
-        "bolt/simpleforms": "^1.4"
+        "bolt/simpleforms": "^1.4",
+        "miguelavaqrod/newsletter": "^1.0"
     }
 }
