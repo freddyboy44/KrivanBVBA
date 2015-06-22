@@ -3,7 +3,8 @@
     
     <li class="index-{{ loop.index }}{% if loop.first %} first{% endif %}{% if loop.last %} last{% endif %}{% if item.class is defined %} {{ item.class }}{% endif %}">
         <a href="{{ item.link }}" {% if item.title is defined %}title='{{ item.title|escape }}'{% endif %}
-            class='{{ app.request.pathInfo == '/partners' and item.label == 'Partners' ? ' current ' : '' }}{{ item.label == 'Offerte' and record.contenttype.slug == 'offertes' ? ' current ' }}{{ item.path == record.slug ? ' current ' }}{{ item.label == "Over ABM" and record.contenttype.name == 'Referenties' ? ' current ' }}'>
+            class='{{ app.request.pathInfo == '/partners' and item.label == 'Partners' ? ' current ' : '' }}{{ item.label == 'Offerte' and record.contenttype.slug == 'offertes' ? ' current ' }}{{ item.path == record.slug and record.slug != '' ? ' current ' }}'>
+            
             {% if item.label is defined %}
                 {% if item.label == 'facebook' %}
                     <i class="fa fa-facebook"></i>

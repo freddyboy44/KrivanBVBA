@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Database setup. The driver can be either 'sqlite', 'mysql' or 'postgres'.
 #
 # For SQLite, only the databasename is required. However, MySQL and PostgreSQL
@@ -440,7 +439,7 @@ extensions:
 #        disable: true     # Disable news panel. Defaults to false. "Alerts" will still be shown.
 #    stack:
 #        disable: true     # Disable stack usage. Defaults to false.
-=======
+
 # Database setup. The driver can be either 'sqlite', 'mysql' or 'postgres'.
 #
 # For SQLite, only the databasename is required. However, MySQL and PostgreSQL
@@ -882,4 +881,3 @@ extensions:
 #        disable: true     # Disable news panel. Defaults to false. "Alerts" will still be shown.
 #    stack:
 #        disable: true     # Disable stack usage. Defaults to false.
->>>>>>> origin/master

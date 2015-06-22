@@ -94,10 +94,11 @@
 
 				@include breakpoint(tablet) {
 					display: inline-block;	
-					margin: 0px 6px;
+					margin: 0px 4px;
 				}
 				@include breakpoint(laptop) {
 					text-align: right;	
+					margin: 0px 4px;
 				}
 				@include breakpoint(desktop) {
 					margin: 0px 8px;

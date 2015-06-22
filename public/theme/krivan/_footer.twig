@@ -22,7 +22,7 @@
 
 	<div class="item nietmobiel">
 		<h2>In de kijker</h2>
-		{% setcontent indekijker = 'nieuwsitems/latest/4' where { sticky : 1 } %}
+		{% setcontent indekijker = 'nieuws/latest/4' where { sticky : 1 } %}
 		{% for item in indekijker %}
 			<div class="nieuwsitem">
 				<a href="{{ item.link }}">{{ item.titel }}</a><br/>

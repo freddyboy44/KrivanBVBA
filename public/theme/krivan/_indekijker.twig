@@ -7,7 +7,7 @@
 </div>
 
 <div class="indekijker">
-{% setcontent indekijker = 'nieuwsitems/latest/4' where { sticky : 1 } %}
+{% setcontent indekijker = 'nieuws/latest/4' where { sticky : 1 } %}
 {% for item in indekijker %}
 	<div class="item">
 		{% if item.foto.0 is not null %}
