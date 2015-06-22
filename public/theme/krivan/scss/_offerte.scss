@@ -8,4 +8,9 @@
 		letter-spacing: 2pt;
 		margin-right: 5px;
 	}
+	a.offerte.actief {
+		background-color: white;
+		color: $blauwekleur;
+		border: solid 1px $blauwekleur;
+	}
 }

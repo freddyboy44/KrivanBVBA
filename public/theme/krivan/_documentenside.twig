@@ -1,0 +1,8 @@
+{% setcontent documenttypes = 'documenttypes' %}
+<div class="documenten">
+	{% for documenttype in documenttypes  %}	
+		{{ documenttype.naam }}<br/>
+	{% endfor %}
+</div>
+
+

@@ -5,10 +5,14 @@
 {% endblock %}
 
 {% block gegevens %}
+
+    {% if record.contenttype.slug == 'pages' %}
+        {% setcontent record = 'offerte/1' where {slug: "autoverzekering"} %}
+    {% endif %}
     {% setcontent offertes = 'offertes' orderby 'id' %}
     <div class="offertes">
 	    {% for offerte in offertes %}
-	    	<a href="{{ offerte.link }}" class="offerte">{{ offerte.naam }}</a>
+	    	<a href="{{ offerte.link }}" class="offerte {{ offerte == record ? ' actief ' }}">{{ offerte.naam }}</a>
 	    {% endfor %}
     </div>
     

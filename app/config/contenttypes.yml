@@ -45,7 +45,7 @@ nieuws:
             type: text
         slug:
             type: slug
-            uses: Titel
+            uses: titel
         Regel2:
             type: text
         Teaser:
@@ -83,7 +83,35 @@ offertes:
             type: slug
             uses: naam
     record_template: offerte.twig
-            
+
+documenten: 
+    name: Documenten 
+    singular_name: Documenten
+    fields:
+        Naam:
+            type: text
+        Bestand:
+            type: file 
+    relations:
+        partners:
+            multiple: false
+            label: Selecteer maatschappij
+            order: naam
+            format: "{{ item.naam|escape }}"
+        documenttype: 
+            multiple: true
+            label: Documenttype 
+            order: naam 
+    record_template: documenten.twig
+    listing_template: documenten.twig
+
+documenttypes:
+    name: Documenttypes 
+    singular_name: Documenttype 
+    fields:
+        Naam:
+            type: text
+
 # Entries can be used for things like 'news' or 'blogpostings'. They have a 'teaser',
 # which can be used for a short blurb on listing-pages, allowing visitors to
 # click-through to the rest of the entry. It also has fields for an image and an
