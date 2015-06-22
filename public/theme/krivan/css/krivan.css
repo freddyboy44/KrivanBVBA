@@ -710,7 +710,7 @@ form textarea {
   overflow: hidden;
 }
 /* line 3, ../scss/_contact.scss */
-.contact .item {
+.contact .formulier, .contact .item {
   width: 100%;
   display: block;
   float: left;
@@ -719,60 +719,69 @@ form textarea {
 }
 @media (min-width: 640px) {
   /* line 3, ../scss/_contact.scss */
-  .contact .item {
-    width: 50%;
+  .contact .formulier, .contact .item {
+    width: 47%;
   }
 }
-/* line 12, ../scss/_contact.scss */
+/* line 14, ../scss/_contact.scss */
+.contact .item {
+  border-bottom: solid 4px #d62b28;
+}
+/* line 16, ../scss/_contact.scss */
 .contact .item .map {
   height: 250px;
   width: 100%;
 }
-/* line 17, ../scss/_contact.scss */
+/* line 21, ../scss/_contact.scss */
 .contact .item .gegevens {
   line-height: 150%;
+  padding-top: 20px;
   overflow: hidden;
 }
-/* line 21, ../scss/_contact.scss */
+/* line 25, ../scss/_contact.scss */
 .contact .item .gegevens .adres, .contact .item .gegevens .communicatie {
   width: 50%;
   display: block;
   overflow: hidden;
   float: left;
 }
-/* line 22, ../scss/_contact.scss */
+/* line 26, ../scss/_contact.scss */
 .contact .item .gegevens .adres h4, .contact .item .gegevens .communicatie h4 {
   margin-bottom: 0px;
   font-size: 20px;
 }
-/* line 31, ../scss/_contact.scss */
+/* line 35, ../scss/_contact.scss */
 .contact .item .gegevens .communicatie {
   margin-top: 10px;
 }
-/* line 34, ../scss/_contact.scss */
-.contact .item .gegevens .openingsuren {
-  margin-top: 20px;
-}
 /* line 38, ../scss/_contact.scss */
+.contact .item .gegevens .openingsuren {
+  margin-top: 40px;
+}
+/* line 42, ../scss/_contact.scss */
 .contact .item table {
   width: 100%;
 }
-/* line 41, ../scss/_contact.scss */
+/* line 45, ../scss/_contact.scss */
 .contact .item table tr td, .contact .item table tr th {
   padding-left: 20px;
 }
-/* line 45, ../scss/_contact.scss */
+/* line 49, ../scss/_contact.scss */
 .contact .item table thead {
   text-decoration: underline;
 }
-/* line 47, ../scss/_contact.scss */
+/* line 51, ../scss/_contact.scss */
 .contact .item table thead tr {
   height: 30px;
   vertical-align: top;
 }
-/* line 54, ../scss/_contact.scss */
+/* line 58, ../scss/_contact.scss */
 .contact .item table tbody tr td:first-child {
   border-right: solid 1px #d62b28;
+}
+/* line 68, ../scss/_contact.scss */
+.contact .item:first-child, .contact .formulier:first-child {
+  margin-right: 3%;
 }
 
 /* line 23, ../scss/krivan.scss */

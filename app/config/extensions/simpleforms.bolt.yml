@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # This is the config file for the Simple Forms extension.
 
 # stylesheet: assets/simpleforms.css
@@ -428,3 +429,435 @@ demo:
       placeholder: Yes, I will gladly agree to something or other.
       required: true
   button_text: Send the Demo form!
+=======
+# This is the config file for the Simple Forms extension.
+
+# stylesheet: assets/simpleforms.css
+template: assets/simpleforms_form.twig
+mail_template: assets/simpleforms_mail.twig
+message_ok: Bedankt! Uw offerte werd verstuurd.
+message_error: Er is een fout gebeurd, controleer alle gegevens en probeer opnieuw.
+message_technical: Momenteel zijn er technische problemen, neem gerust telefonisch contact met ons op.  Onze excuses voor het ongemak.
+button_text: Verstuur
+# Optional. Used only, when you have a file field.
+# mime_types_message: "Not allowed file type. Allowed file types are:"
+
+# ReCaptcha Config - Set these options to enable ReCaptcha spam protection.
+# Generate your keys at https://www.google.com/recaptcha/admin/create
+recaptcha_enabled: true
+recaptcha_public_key: '6LeKjAgTAAAAAPxFB3azNBJCMp5cD4m5neyKTmjK'
+recaptcha_private_key: '6LeKjAgTAAAAADkORdJTBgGTyF71aYBk4CS5V9OR'
+recaptcha_error_message: "Captcha is fout, probeer opnieuw"
+recaptcha_theme: clean
+
+# Enable CSRF protection for forms. You should leave this set to 'true', unless
+# you know what you're doing.
+csrf: true
+
+# Default fallback sender email
+# this is required because Swiftmailer will reject the message without one
+# please make this a sensible existing email address
+from_email: info@krivanbvba.be
+from_name: Krivan BVBA
+
+# global cc email address
+# set this value to an email address that will receive a copy of every email from simpleforms
+# recipient_cc_email: info@example.com
+# recipient_cc_name: Info
+
+# global bcc email address
+# set this value to an email address that will receive a blind copy of every email from simpleforms
+# recipient_bcc_email: info@example.com
+
+# global testmode
+# for development all email will be sent to this address
+# all other recipient and cc addresses will be ignored
+# remove or set 'testmode' to false for a production site
+testmode : true
+testmode_recipient: boifrederik@telenet.be
+
+# from_email and from_name can be set for picky SMTP servers
+
+brandverzekering:
+  recipient_email: info@krivanbvba.be 
+  recipient_name: Krivan BVBA
+  fields:
+    voornaam:
+      type: text
+      required: true
+      label: Voornaam
+      prefix: "<h3>Uw gegevens</h3>"
+    naam:
+      type: text
+      required: true
+      label: Naam
+    beroep:
+      type: text
+      required: true
+      label: Uw beroep
+    adres:
+      type: text
+      required: true
+      label: Adres
+    postcode:
+      type: text
+      required: true
+      label: Postcode 
+    gemeente:
+      type: text
+      required: true
+      label: Gemeente 
+    geboortedatum:
+      type: text
+      required: true
+      label: Geboortedatum 
+      class: datum
+    telefoon:
+      type: text
+      required: true
+      label: telefoon
+    email:
+      type: email
+      required: true
+      label: Email
+    adresgebouw:
+      type: text
+      required: true
+      label: Adres gebouw
+      prefix: "<h3>Informatie gebouw</h3>"
+    postcodegebouw:
+      type: text
+      required: true
+      label: Postcode gebouw
+    gemeentegebouw:
+      type: text
+      required: true
+      label: Gemeente gebouw
+    eigenaar:
+      type: choice  
+      required: true
+      label: Eigenaar 
+      choices: [Eigenaar + Bewoner, Eigenaar + geen bewoner, Huurder]
+    typewoning:
+      type: choice  
+      required: true
+      label: Type woning 
+      choices: [Appartement, Woonhuis / Open bebouwing, Woonhuis / Halfopen bebouwing, Woonhuis / Gesloten bebouwing ]
+    waardegebouw:
+      type: text
+      required: true
+      label: Geschatte waarde gebouw
+      prefix: "<h3>Te verzekeren bedragen</h3>"
+    waardeinboedel:
+      type: text
+      required: true
+      label: Geschatte waarde inboedel
+    brandwaarborg:
+      type: checkbox
+      required: false
+      label: Brand 
+      prefix: "<h3>Waarborgen</h3>"
+    diefstalwaarborg:
+      type: checkbox
+      required: false
+      label: Diefstal
+    alarmwaarborg:
+      type: checkbox
+      required: false
+      label: Alarmsysteem
+    rechtsbijstand:
+      type: checkbox
+      required: false
+      label: Rechtsbijstand
+    aantalvoertuigen:
+      type: text
+      required: false
+      label: Aantal voertuigen in rust
+    verzekerd:
+      type: checkbox
+      required: false
+      label: Reeds verzekerd
+      prefix: "<h3>BIJKOMENDE INFORMATIE</h3>"
+    maatschappij:
+      type: text
+      required: false
+      label: Zo ja, bij welke maatschappij
+    schadegevallen:
+      type: text
+      required: false
+      label: Aantal schadegevallen laatste 5 jaar
+    opmerkingen:
+      type: textarea
+      required: false
+      label: Opmerkingen 
+      prefix: "<h3>Opmerkingen</h3>"
+
+pensioensparen:
+  recipient_email: info@krivanbvba.be 
+  recipient_name: Krivan BVBA
+  fields:
+    voornaam:
+      type: text
+      required: true
+      label: Voornaam
+      prefix: "<h3>Uw gegevens</h3>"
+    naam:
+      type: text
+      required: true
+      label: Naam
+    beroep:
+      type: text
+      required: true
+      label: Uw beroep
+    adres:
+      type: text
+      required: true
+      label: Adres
+    postcode:
+      type: text
+      required: true
+      label: Postcode 
+    gemeente:
+      type: text
+      required: true
+      label: Gemeente 
+    geboortedatum:
+      type: text
+      required: true
+      label: Geboortedatum 
+      class: datum
+    telefoon:
+      type: text
+      required: true
+      label: telefoon
+    email:
+      type: email
+      required: true
+      label: Email
+    maximumaftrekbaar:
+      type: text
+      required: false
+      label: Fiscaal maximum aftrekbaar
+      prefix: "<h3>Gewenst jaarlijks spaarbedrag</h3>"
+    zelftebepalen:
+      type: text
+      required: false
+      label: Zelf te bepalen bedrag
+    opmerkingen:
+      type: textarea
+      required: false
+      label: Opmerkingen 
+      prefix: "<h3>Opmerkingen</h3>"
+
+autoverzekering:
+  recipient_email: info@krivanbvba.be 
+  recipient_name: Krivan BVBA
+  fields:
+    voornaam:
+      type: text
+      required: true
+      label: Voornaam
+      prefix: "<h3>Uw gegevens</h3>"
+    naam:
+      type: text
+      required: true
+      label: Naam
+    beroep:
+      type: text
+      required: true
+      label: Uw beroep
+    adres:
+      type: text
+      required: true
+      label: Adres
+    postcode:
+      type: text
+      required: true
+      label: Postcode 
+    gemeente:
+      type: text
+      required: true
+      label: Gemeente 
+    geboortedatum:
+      type: text
+      required: true
+      label: Geboortedatum 
+      class: datum
+    rijbewijs:
+      type: text
+      required: true
+      label: Rijbewijsdatum
+      class: datum
+    telefoon:
+      type: text
+      required: true
+      label: telefoon
+    email:
+      type: email
+      required: true
+      label: Email
+    merk:
+      type: text
+      required: true
+      label: Merk 
+      prefix: "<h3>Uw voertuig</h3>"
+    model:
+      type: text
+      required: true
+      label: Model
+    vermogen:
+      type: text
+      required: true
+      label: Vermogen in kw 
+    eerstegebruik:
+      type: text
+      required: true
+      label: Eerste gebruik
+      class: datum
+      prefix: "<h3>Waarborgen</h3>"
+    bmgraad:
+      type: text
+      required: true
+      label: Uw BM graad
+    rechtsbijstand:
+      type: checkbox
+      required: false
+      label: Rechtsbijstand 
+    ongevallen:
+      type: checkbox
+      required: false
+      label: Ongevallen bestuurder
+    omnium:
+      type: choice  
+      required: true
+      label: Omnium 
+      choices: [Geen omnium, Mini omnium, Volledige omnium]
+    cataloguswaarde:
+      type: text
+      required: true
+      label: Cataloguswaarde 
+    bijstand:
+      type: choice  
+      required: true
+      label: Bijstand 
+      choices: [Wegenhulp, Wegenhulp + Personenhulp]
+    verzekerd:
+      type: checkbox
+      required: false
+      label: Reeds verzekerd
+      prefix: "<h3>BIJKOMENDE INFORMATIE</h3>"
+    maatschappij:
+      type: text
+      required: false
+      label: Zo ja, bij welke maatschappij
+    schadegevallen:
+      type: text
+      required: false
+      label: Aantal schadegevallen laatste 5 jaar
+    opmerkingen:
+      type: textarea
+      required: false
+      label: Opmerkingen 
+      prefix: "<h3>Opmerkingen</h3>"
+
+
+
+# A simple contact form. Use as {{ simpleform('contact') }} in your templates.
+contact:
+  recipient_email: info@krivanbvba.be
+  recipient_name: Krivan BVBA
+  fields:
+    name:
+      type: text
+      required: true
+      label: Naam
+      prefix: "<h2>Contacteer ons</h2>"
+    email:
+      type: email
+      label: Email 
+      required: true
+      label: Email
+    message:
+      type: textarea
+      required: true
+      label: Boodschap
+
+nieuwsbrief:
+  recipient_email: info@krivanbvba.be
+  recipient_name: Krivan BVBA
+  fields:
+    name: 
+      type: text
+      label: Naam
+      required: true
+      prefix: "<h2>Schrijf je in op onze nieuwsbrief</h2>"
+    email:
+      type: email
+      required: true
+      label: Email 
+  insert_into_table: nieuwsbrief
+
+# A demo form to showcase various options for fields. Use as
+# {{ simpleform('demo') }} in your templates.
+demo:
+  mail_subject: "Fancy Mail Subject"
+  from_email: demoform@example.org
+  from_name: demoform sender
+  # you can override the default sender email-address in a form
+  recipient_email: info@example.org
+  recipient_name: Info
+  recipient_cc_email: another@example.com
+  recipient_cc_name: Another Email Address
+  # if you want to save form content to a database make a table with the exact column names and types of your fields
+  insert_into_table: bolt_your_table_name
+  # uploaded files will be saved here if you have a file field
+  storage_location: demo_uploads
+  # uploaded files attached to the email if true
+  attach_files: true
+  fields:
+    subject:
+      type: text
+      class: wide
+      required: false
+      label: Subject of your message
+      placeholder: Just a quick message ..
+      maxlength: 30
+    name:
+      type: text
+      required: true
+      placeholder: Your name ..
+    email:
+      type: email
+      label: Email address
+      required: true
+      placeholder: Your email ..
+      use_as: from_email
+      use_with: name
+    message:
+      type: textarea
+      required: true
+      placeholder: Well, the other day I was thinking that maybe you ought to improve your website by adding ..
+    favorite:
+      type: choice
+      label: My favorite animals are
+      empty_value: My favorite animals are
+      choices: [ Kittens, Puppies, Penguins, Koala bears, "I don't like animals" ]
+      required: true
+    file:
+      type: file
+      label: Upload a file
+      required: true
+      filetype: [jpg, gif, tiff, png, pdf]
+      #mimetypes are optional, used by Symfony Forms Validator
+      mimetype: ["application/pdf", "application/x-pdf", "image/tiff", "image/x-tiff", "image/png", "image/jpeg", "image/pjpeg", "image/gif"]
+    option1:
+      type: checkbox
+      label: Newsletter
+      placeholder: Yes, I <em>love</em> receiving <del>spam</del>, eh, newsletters.
+    option2:
+      type: checkbox
+      label: Agree to this!
+      placeholder: Yes, I will gladly agree to something or other.
+      required: true
+  button_text: Send the Demo form!
+>>>>>>> origin/master
