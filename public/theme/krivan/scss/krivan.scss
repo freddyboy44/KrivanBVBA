@@ -19,6 +19,7 @@ and open the template in the editor.
 @import "offerte";
 @import "forms";
 @import "contact";
+@import "nieuws";
 
 * {
 	box-sizing: border-box;
@@ -83,6 +84,28 @@ h4 {
 		    content: "• ";
 		    margin-right: 10px;
 		    color: $rodekleur; /* or whatever color you prefer */
+		}
+	}
+	ul.pagination {
+		list-style: none;
+		padding: 0;
+		li:before {
+			content: none;
+		}
+		li {
+			a {
+				color: $blauwekleur;
+				border: none;
+				padding: 6px 6px;
+			}
+		}
+		li.active {
+			a {
+				background-color: white;
+				color: $rodekleur;	
+				border: none;
+				text-decoration: underline;
+			}
 		}
 	}
 

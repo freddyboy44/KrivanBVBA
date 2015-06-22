@@ -1,7 +1,64 @@
-{% extends 'basepage.twig' %}
+{% extends 'record.twig' %}
 
-{% block body %}
-	<div class="max-container content">
-		test
+
+
+{% block title %}
+	Nieuws
+{% endblock %}
+{% block titel %}
+    Nieuws
+{% endblock %}
+
+{% block gegevens %}
+	{% if record is null %}
+		{% setcontent temp = 'nieuws/latest/1' orderby '-datechanged' %}
+		{% set record = temp|first %}
+	{% endif %}
+	<div class="max-container content nieuws">
+		<div class="tweekolommen">
+			<div class="left-content">
+				{% if record.foto|length > 0 %}
+					{% if record.foto|length > 1 %}
+						<div id="nieuwscarousel" class="carousel slide home nieuws" data-ride="carousel">
+							<div class="carousel-inner" role="listbox">
+								{% for foto in record.foto %}
+									<div class="item carouselitem {{ loop.index ==1 ? ' active ' }}"><img src="{{ foto|thumbnail(1200, 500, "c") }}"></div>
+								{% endfor %}
+							</div>
+							<a class="linkscarousel" href="#nieuwscarousel" role="button" data-slide="prev"></a>
+							<a class="rechtscarousel" href="#nieuwscarousel" role="button" data-slide="next"></a>
+						</div>        
+						<script>
+						
+						$('#nieuwscarousel').carousel({
+						  interval: 5000
+						})
+						</script>
+					{% else %}
+						<img src="{{ record.foto.0|thumbnail(800,300,f) }}">
+					{% endif %}
+				{% endif %}
+				<h2>{{ record.titel }}</h2>
+				{{ record.tekst }}
+			</div>
+			<div class="aside">
+				
+				{% setcontent nieuwsitems = "nieuws/latest/8" orderby '-datechanged' allowpaging %}
+
+				{% for nieuwsitem in nieuwsitems %}
+					<div class="nieuwsitem {{ nieuwsitem == record ? 'actief' }}">
+						<div class="titel">
+							<a href="{{ nieuwsitem.link }}">{{ nieuwsitem.titel }}</a>
+						</div>
+						<div class="datum">
+							{{ nieuwsitem.datechanged|date('d/m/y') }}
+						</div>
+					</div>
+				{% endfor %}
+
+				{{ pager('',2,'_sub_mypager.twig') }}
+			</div>
+		</div>
+
 	</div>
 {% endblock %}

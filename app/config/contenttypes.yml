@@ -37,15 +37,15 @@ voorpaginafotos:
 
 nieuws:
     name: Nieuws 
-    singular_name: Nieuwtje
-    record_template: nieuwsitem.twig
+    singular_name: Nieuws
+    record_template: nieuws.twig
     listing_template: nieuws.twig
     fields:
         Titel:
             type: text
         slug:
             type: slug
-            uses: titel
+            uses: Titel
         Regel2:
             type: text
         Teaser:

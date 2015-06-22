@@ -1,0 +1,36 @@
+.content.nieuws {
+	h2 {
+		color: $blauwekleur;
+		text-transform: uppercase;
+		font-size: 26px;
+		margin-top: 0px;
+	}
+
+	.carousel {
+		margin-bottom: 20px;
+		img {
+			margin-bottom: 0px;
+		}
+	}
+
+	img {
+		margin-bottom: 20px;
+	}
+
+	.nieuwsitem {
+		margin-bottom: 15px;
+		a {
+			text-decoration: underline;
+			text-transform: uppercase;
+			font-family: 'FuturaStd-Condensed';
+		}
+	}
+	.nieuwsitem.actief {
+		a, a:hover, a:focus {
+			color: $rodekleur;
+			text-decoration: underline;	
+		}
+		color: $rodekleur;
+		font-style: italic;
+	}
+}
